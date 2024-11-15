@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}User Activity by Day of Week{% endblock %}
+
+{% block content %}
+    <h1>User Activity by Day of Week</h1>
+    <div class="chart-container">
+        <img src="data:image/png;base64,{{ chart }}" alt="User Activity by Day of Week Chart">
+    </div>
+{% endblock %}

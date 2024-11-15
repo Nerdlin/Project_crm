@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}Benefits Distribution{% endblock %}
+
+{% block content %}
+    <h1>Benefits Distribution</h1>
+    <div class="chart-container">
+        <img src="data:image/png;base64,{{ chart }}" alt="Benefits Distribution Chart">
+    </div>
+{% endblock %}

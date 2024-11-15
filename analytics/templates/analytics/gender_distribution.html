@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Gender Distribution{% endblock %}
+
+{% block content %}
+    <h1>Gender Distribution</h1>
+    <ul class="data-list">
+        {% for item in gender_data %}
+            <li>{{ item.gender }}: {{ item.total }} ({{ item.percentage|floatformat:1 }}%)</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

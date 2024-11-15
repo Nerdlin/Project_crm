@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}Average Children by Age Group{% endblock %}
+
+{% block content %}
+    <h1>Average Children by Age Group</h1>
+    <div class="chart-container">
+        <img src="data:image/png;base64,{{ chart }}" alt="Average Children by Age Group Chart">
+    </div>
+{% endblock %}

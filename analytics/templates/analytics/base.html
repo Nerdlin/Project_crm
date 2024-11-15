@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Аналитика{% endblock %}</title>
+
+    <body>
+        <h1>Аналитика</h1>
+        <div>
+            <button onclick="window.location.href='{% url 'gender_distribution' %}'">Гендерное распределение</button>
+            <button onclick="window.location.href='{% url 'age_category_distribution' %}'">Возрастные категории</button>
+            <button onclick="window.location.href='{% url 'region_distribution' %}'">Распределение по регионам</button>
+            <button onclick="window.location.href='{% url 'benefits_distribution' %}'">Пособия</button>
+            <button onclick="window.location.href='{% url 'average_children_by_age_group' %}'">Среднее количество детей по возрастным группам</button>
+            <button onclick="window.location.href='{% url 'user_activity_over_time' %}'">Активность пользователей</button>
+            <button onclick="window.location.href='{% url 'function_usage_analysis' %}'">Использование функций</button>
+            <button onclick="window.location.href='{% url 'quiz_points_distribution' %}'">Распределение баллов</button>
+        </div>
+    </body>
+    
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #003366;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        main {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+        }
+        h1 {
+            color: #003366;
+        }
+        .chart-container {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .data-list {
+            list-style: none;
+            padding: 0;
+        }
+        .data-list li {
+            background: #e3e3e3;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Analytics Dashboard</h1>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <p>&copy; 2024 Analytics Dashboard</p>
+    </footer>
+</body>
+</html>

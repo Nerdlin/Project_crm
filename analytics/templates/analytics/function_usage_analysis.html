@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}Function Usage Analysis{% endblock %}
+
+{% block content %}
+    <h1>Function Usage Analysis</h1>
+    <div class="chart-container">
+        <img src="data:image/png;base64,{{ chart }}" alt="Function Usage Chart">
+    </div>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}Age Category Distribution{% endblock %}
+
+{% block content %}
+    <h1>Age Category Distribution (Percentage)</h1>
+    <div class="chart-container">
+        <img src="data:image/png;base64,{{ chart }}" alt="Age Category Distribution Chart">
+    </div>
+{% endblock %}

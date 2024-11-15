@@ -1,0 +1,31 @@
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+    header, footer {
+        background-color: #003366;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+    }
+    .analytics-container {
+        padding: 2rem;
+        max-width: 1200px;
+        margin: auto;
+    }
+    .btn {
+        background-color: #4CAF50; /* Зеленый цвет для кнопок */
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+</style>

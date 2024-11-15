@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Region Distribution{% endblock %}
+
+{% block content %}
+    <h1>Region Distribution</h1>
+    <ul class="data-list">
+        {% for item in region_data %}
+            <li>{{ item.region }}: {{ item.total }} ({{ item.percentage|floatformat:1 }}%)</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
